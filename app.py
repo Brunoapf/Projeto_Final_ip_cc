@@ -15,7 +15,7 @@ def index():
 def sobre_equipe():
     return render_template('sobre.html')
 
-genai.configure(api_key="GEMINI_API_KEY")
+genai.configure(api_key="AIzaSyDvEzaWiSiMANVoDa68lCxtDKjcrOhitv4")
 
 @app.route('/gemini', methods=["GET", "POST"])
 def gemini():
