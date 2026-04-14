@@ -1,67 +1,77 @@
-# Projeto Final – Introdução à Programação
+# 📚 Projeto Flask 
 
-Este projeto é uma aplicação web desenvolvida como trabalho final da disciplina **Introdução à Programação**, utilizando o microframework **Flask** em Python. A aplicação consiste em um **glossário interativo**, onde o usuário pode adicionar, visualizar e excluir termos e suas definições.
+## 📌 Descrição
 
-## 📚 Funcionalidades
+Este projeto foi desenvolvido como trabalho final da disciplina de Introdução à Programação (IP), com o objetivo de aplicar na prática conceitos fundamentais de programação, lógica e manipulação de dados. A aplicação consiste em um sistema para gerenciamento de dados (CRUD), permitindo cadastrar, consultar, atualizar e remover informações com persistência em arquivo.
 
-- 🔍 **Visualizar termos**: Exibe todos os termos cadastrados em uma tabela com numeração, termo e definição.
-- ➕ **Adicionar termo**: Formulário para inserir um novo termo e sua definição. Termos duplicados não são permitidos.
-- ❌ **Excluir termo**: Cada termo listado possui um botão "Apagar", permitindo sua remoção do glossário com confirmação.
-- 💾 **Persistência em arquivo**: Todos os dados são armazenados no arquivo `bd_glossario.csv` com separador `;`.
+## 🎯 Objetivos
 
-## 🛠️ Tecnologias Utilizadas
+* Aplicar conceitos básicos de programação
+* Trabalhar com estruturas de dados
+* Manipular arquivos (CSV/JSON)
+* Desenvolver operações de CRUD (Create, Read, Update, Delete)
+* Praticar organização e estruturação de código
 
-- **Python 3**
-- **Flask**
-- **HTML5**
-- **Bootstrap (CSS)**
-- **CSV (para armazenamento de dados)**
+## ⚙️ Funcionalidades
 
-## 📁 Estrutura do Projeto
+* ✅ Cadastro de dados
+* 🔍 Consulta de informações
+* ✏️ Atualização de registros
+* ❌ Remoção de dados
+* 💾 Persistência em arquivo (CSV/JSON)
 
-```
+## 🛠️ Tecnologias utilizadas
+
+* Python
+* Flask (caso esteja utilizando backend web)
+* CSV / JSON
+* HTML / CSS (caso tenha interface)
+
+## 📂 Estrutura do Projeto
+
 Projeto_Final_ip_cc/
 │
-├── static/                  # Arquivos CSS (estilo visual)
-├── templates/               # Páginas HTML (modelo, glossário, etc.)
-│   ├── modelo.html
-│   └── glossario.html
-│
-├── bd_glossario.csv         # Base de dados com os termos
-├── app.py                   # Código principal da aplicação Flask
-├── README.md                # Este arquivo
-└── LICENSE                  # Licença MIT
-```
+├── app.py
+├── templates/
+├── static/
+├── bd_glossario.csv
+├── requirements.txt
+└── README.md
 
-## 🚀 Como Executar
+## 🚀 Como executar o projeto
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/Uuiskas/Projeto_Final_ip_cc.git
+   git clone https://github.com/Brunoapf/Projeto_Final_ip_cc.git
+
+2. Acesse a pasta:
    cd Projeto_Final_ip_cc
-   ```
 
-2. Crie um ambiente virtual e instale o Flask:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # Linux/macOS
-   venv\Scripts\activate     # Windows
-   pip install flask
-   ```
+3. Instale as dependências:
+   pip install -r requirements.txt
 
-3. Execute o app:
-   ```bash
-   flask run
-   ```
+4. Execute o projeto:
+   python app.py
 
-4. Acesse no navegador:  
-   `http://127.0.0.1:5000/glossario`
+5. Acesse no navegador:
+   http://localhost:5000
 
-## 📝 Observações
+## 📸 Demonstração
 
-- A aplicação não usa banco de dados SQL, optando por um arquivo `.csv` para manter o projeto simples e didático.
-- O projeto é ideal para iniciantes que desejam aprender Flask e manipulação de arquivos em Python.
+(Adicione imagens ou prints do sistema aqui)
 
-## 📄 Licença
+## 📖 Conceitos aplicados
 
-Distribuído sob a licença MIT. Veja `LICENSE` para mais detalhes.
+* Estruturas condicionais
+* Laços de repetição
+* Manipulação de arquivos
+* Funções
+* Organização em módulos
+* CRUD
+
+## 👨‍💻 Autor
+
+Bruno
+
+## 📌 Observações
+
+Este projeto tem fins educacionais e foi desenvolvido como parte da disciplina de Introdução à Programação.
